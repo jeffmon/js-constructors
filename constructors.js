@@ -11,6 +11,19 @@
  * @method   getDetails
  */
 
+function Spell(name, cost, description){
+  this.name = name;
+  this.cost = cost;
+  this.description = description;
+}
+
+Spell.prototype.getDetails = function(){
+  return "Name = " + this.name + ". " + "Cost = " + this.cost + ". " + "Description = " + this.description + ".";
+};
+
+var fireball = new Spell("Fireball", 10, "Shoots a burst of fire from your palms.");
+
+
   /**
    * Returns a string of all of the spell's details.
    * The format doesn't matter, as long as it contains the spell name, cost, and description.
