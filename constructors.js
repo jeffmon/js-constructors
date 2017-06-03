@@ -21,7 +21,7 @@ Spell.prototype.getDetails = function(){
   return "Name = " + this.name + ". " + "Cost = " + this.cost + ". " + "Description = " + this.description + ".";
 };
 
-var fireball = new Spell("Fireball", 10, "Shoots a burst of fire from your palms.");
+var vanish = new Spell("Vanish", 5, "Immediately vanish from your surroundings");
 
 
   /**
